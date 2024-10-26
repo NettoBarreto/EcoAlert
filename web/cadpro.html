@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Cadastro de Produtos</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <form method="post" action="salvar_produtos.jsp" target="centro">
+
+        <p>
+            <label for="codigo">Código:</label>
+            <input type="number" name="codigo" id="codigo">
+        </p>
+        <p>
+            <label for="nome">Nome do Produto:</label>
+            <input type="text" name="nome" id="nome" size="50" maxlength="1000">
+        </p>
+        <p>
+            <label for="data">Validade(dd/mm/yyyy):</label>
+            <input type="text" name="data" id="data" size="10" maxlength="10">
+        </p>
+        <p>
+            <input type="submit" value="Salvar">
+        </p>
+    </form>
+</body>
+</html>
