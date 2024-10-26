@@ -31,7 +31,7 @@
 %>
                 <table> 
                     <tr>
-                        <th>Código</th> <th>Nome</th> <th>Validade</th> <th>EXclusão</th>
+                        <th>Código</th> <th>Nome</th> <th>Validade</th> <th>Exclusão</th>
 <%
                 while (rs.next()) {
 %>                
