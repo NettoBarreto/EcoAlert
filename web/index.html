@@ -1,35 +1,211 @@
-<html>
-    <head>
-        <title>HOME-EcoAlert</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="configura.css">
-        <Style>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAlert</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
 
-        footer {
+        .container {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            background-color: #6CBE5C;
+            padding: 50px;
+            box-sizing: border-box;
+            width: 40%;
+        }
+        
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+        }
+
+        .right img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            margin: 0;
+            margin-top: 30px;
+            font-size: 3em;
             color: white;
-            text-align: right;
+            text-align: left;
+            padding-bottom: 4px;
+        }
+        h2 {           
+            margin: 0;
+            margin-left: 5px;
+            padding-right: 120px;
+            font-size: 2em;
+            color: white;
+            text-align: left;
+            padding-top: 4px;
+            margin-bottom: 60px; /* Ajuste para manter a distância proporcional */
+        }
+        p {
+            font-size: 1.2em;
+            color: white;
+            text-align: left;
+            margin: 2px 0;
+            line-height: 1.2;
+        }
+
+        h1 + h2 {
+            margin-top: -10px;
 
         }
-        </Style>
-    </head>
-    <body>
-        <header>
-            <h1>EcoAlert - UPX2</h1>
-        </header>
-        <nav>
-            <a href="cadpro.html" target="centro">Cadastro de Produtos</a>
-            <a href="listpro.jsp" target="centro">Listagem de Produtos</a>
-            <a href="excpro.html" target="centro">Excluir Produtos</a>
-            <a href="altpro.html" target="centro">Alterar Produtos</a>
-            <a href="conpro.html" target="centro">Consultar Produtos</a>
-        </nav>
-        <main>
-            <iframe src="apresentacao.html" name="centro"></iframe>
-        </main>
-        <footer>
-            <p>By Netto Barreto - Computeiros</p>
+
+
+        .buttons {
+            text-align: center;
+            margin-top: auto;
+            margin-bottom: 30px;
+            padding-top: 20px;
             
-        </footer>
-    </body>
+        }
+        .buttons a {
+            padding: 15px 30px;
+            margin: 0 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .buttons a:hover {
+            padding: 15px 30px;
+            margin: 0 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .register {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .register:hover {
+            background-color: green;
+            color: white;
+        }
+
+        .login {
+            background-color: #008CBA;
+            color: white;
+        }
+        .login:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        /* Media Queries */
+        @media (min-width: 998px) and (min-height: 687px) {
+            h1 {
+                font-size: 100px;
+            }
+            h2 {
+                font-size: 33px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        @media (max-width: 1200px) {
+            h1 {
+                font-size: 80px;
+            }
+            h2 {
+                font-size: 28px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 992px) {
+            .container {
+                flex-direction: column;
+            }
+            .left, .right {
+                width: 100%;
+                height: auto;
+            }
+            h1 {
+                font-size: 60px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 768px) {
+            .left {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 50px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 40px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 10px;
+            }
+            .buttons a {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Eco Alert</h1>
+            <h2>O parceiro da sua alimentação</h2>
+            <p>Na correria do dia a dia, você precisa de um parceiro para ajudar a cuidar de si e de sua família.</p>
+            <p>Com o Eco Alert, você fica sempre ligado na qualidade de sua comida, sem deixar passar do prazo de validade.
+                Além de economizar dinheiro, você também contribui com o ecossistema - menos comida desperdiçada e menos gases de efeito estufa na atmosfera </p>
+            <div class="buttons">
+                <a class="register">Cadastre-se</a>
+                <a href="twoindex.html" class="login">Acesse</a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="Arquivos/image.png" alt="Imagem de exemplo">
+        </div>
+    </div>
+</body>
 </html>
