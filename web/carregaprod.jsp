@@ -40,7 +40,7 @@
                     
         %>
 
-                <form method="post" action="salvar_produtos.jsp" target="centro">
+                <form method="post" action="alterar_produtos.jsp" target="centro">
 
                     <p>
                         <label for="codigo">Código:</label>
@@ -51,7 +51,7 @@
                         <input type="text" name="nome" id="nome" size="50" maxlength="1000" value=<%=nome%>>
                     </p>
                     <p>
-                        <label for="data">Validade(dd/mm/yyyy):</label>
+                        <label for="data">Validade(dd/mm/yy):</label>
                         <input type="text" name="data" id="data" size="10" maxlength="10" value=<%=validade%>>
                     </p>
                     <p>

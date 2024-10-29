@@ -31,7 +31,11 @@
 %>
                 <table> 
                     <tr>
-                        <th>Código</th> <th>Nome</th> <th>Validade</th> <th>Exclusão</th>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Validade</th>
+                        <th>Exclusão</th>
+                        <th>Alteração</th>
 <%
                 while (rs.next()) {
 %>                
@@ -40,6 +44,7 @@
                         <td><%= rs.getString("nome") %></td>
                         <td><%= rs.getString("validade") %></td>  
                         <td><a href="excpro.jsp?codigo=<%= rs.getString("codigo") %>">Excluir</a></td>
+                        <td><a href="carregaprod.jsp?codigo=<%= rs.getString("codigo") %>">Alterar</a></td>
                     </tr>                
 <%
     }                    
