@@ -46,7 +46,7 @@
 
         h1 {
             margin: 0;
-            margin-top: 30px;
+            margin-top: -40px;
             font-size: 3em;
             color: white;
             text-align: left;
@@ -59,8 +59,8 @@
             font-size: 2em;
             color: white;
             text-align: left;
-            padding-top: 4px;
-            margin-bottom: 60px; /* Ajuste para manter a distância proporcional */
+            padding-top: 20px;
+            margin-bottom: 8px; /* Ajuste para manter a distância proporcional */
         }
         p {
             font-size: 1.2em;
@@ -68,6 +68,8 @@
             text-align: left;
             margin: 2px 0;
             line-height: 1.2;
+
+
         }
 
         h1 + h2 {
@@ -104,8 +106,7 @@
         }
 
         .register {
-            font-weight: 700;
-            background-color: #DABB3E;
+            background-color: #4CAF50;
             color: white;
         }
         .register:hover {
@@ -114,8 +115,7 @@
         }
 
         .login {
-            font-weight: 700;
-            background-color: #DABB3E;
+            background-color: #008CBA;
             color: white;
         }
         .login:hover {
@@ -193,19 +193,133 @@
                 font-size: 0.9em;
             }
         }
+
+        .formLogin {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border-radius: 7px;
+            padding: 40px;
+            box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+            gap: 1px;
+            text-align: left;
+        }
+
+        .areaLogin img {
+            width: 420px;
+        }
+
+        .formLogin h1 {
+            color: black;
+            font: bolder;
+            padding: 0;
+            margin: 0;
+            font-weight: 500;
+            font-size: 2.3em;
+            margin-top: -30px;
+        }
+
+        .formLogin h2 {        
+            margin: 0;
+            font-size: 2em;
+            color: black;
+            padding-top: 0px;
+            margin-top: -25px;
+            margin-bottom: 30px; /* Ajuste para manter a distância proporcional */
+        }
+        
+
+        .formLogin p {
+            display: inline-block;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+            margin-top: -20px;
+        }
+
+        .formLogin input {
+            padding: 15px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            margin-top: 5px;
+            border-radius: 4px;
+            transition: all linear 160ms;
+            outline: none;
+        }
+
+        .formLogin input:focus {
+            border: 1px solid #f72585;
+        }
+
+        .formLogin label {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 0px;
+        }
+
+        .formLogin a {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: #555;
+            transition: all linear 160ms;
+        }
+
+        .formLogin a:hover {
+            color: #f72585;
+        }
+
+        #inputAcesso {
+            margin-bottom: -10px;
+
+        }
+
+        #esqSenha {
+            margin-bottom: 2px;
+        }
+
+        #menuCadastro {
+            font-style: impact;
+        }
+
+        #inputInfo {
+            margin-top: -0px;
+            margin-bottom: 15px;
+        }
+
+
+
     </style>
 </head>
 <body>
     <div class="container">
         <div class="left">
             <h1>Eco Alert</h1>
-            <h2>O parceiro da sua alimentação</h2>
-            <p>Na correria do dia a dia, você precisa de um parceiro para ajudar a cuidar de si e de sua família.</p>
-            <p>Com o Eco Alert, você fica sempre ligado na qualidade de sua comida, sem deixar passar do prazo de validade.
-                Além de economizar dinheiro, você também contribui com o ecossistema - menos comida desperdiçada e menos gases de efeito estufa na atmosfera </p>
-            <div class="buttons">
-                <a class="register">Cadastre-se</a>
-                <a href="twoindex.html" class="login">Acesse</a>
+
+            <div class="page">
+                <form method="POST" class="formLogin">
+                    <h2>Cadastro</h2>
+                    <p>Digite os seus dados no campo abaixo.</p>
+
+                        <label for="email">Nome</label>
+                        <input id="inputInfo" type="email" placeholder="Digite seu nome completo" autofocus="true" />
+
+                        <label for="email">Usuario</label>
+                        <input id="inputInfo" type="email" placeholder="Digite seu nome de usuário unico" autofocus="true" />
+
+                        <label for="email">E-mail</label>
+                        <input id="inputInfo" type="email" placeholder="Digite seu e-mail" autofocus="true" />
+
+                        <label for="password">Senha</label>
+                        <input id="inputInfo" type="password" placeholder="Digite sua senha" />
+
+                        <a id="esqSenha" href="EsqSenha.html">Esqueci minha senha</a>
+                        <a href="indexLogin.html">ou Acesse</a>
+                        <input id="inputAcesso" type="submit" value="Cadastrar-se" class="btn" />
+                        
+
+                </form>
             </div>
         </div>
         <div class="right">
