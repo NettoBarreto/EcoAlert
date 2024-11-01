@@ -286,21 +286,21 @@
     <div class="container">
         <div class="left">
             <h1>Eco Alert</h1>
-            <h2>O parceiro da sua alimentação</h2>
+            <h2 id="test">O parceiro da sua alimentação</h2>
             <div class="page">
-                <form method="POST" class="formLogin">
+                <form method="POST" class="formLogin" action="indexLogin.jsp">
                     
                     <h2>Acesso</h2>
 
                     <p>Digite os seus dados de acesso no campo abaixo.</p>
 
                         <label for="email">E-mail</label>
-                        <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+                        <input type="text" placeholder="Digite seu e-mail" autofocus="true" name="email" id="email" />
 
                         <label for="password">Senha</label>
-                        <input type="password" placeholder="Digite sua senha" />
+                        <input type="password" placeholder="Digite sua senha" name="senha" id="senha" />
 
-                        <a id="esqSenha" href="EsqSenha.html">Esqueci minha senha</a>
+                        <a id="esqSenha" href="esqSenha.html">Esqueci minha senha</a>
                         <a href="indexCadastro.html">ou Cadastre-se</a>
                         <input id="inputAcesso" type="submit" value="Acessar" class="btn" />
                         
