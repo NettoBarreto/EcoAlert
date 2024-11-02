@@ -8,7 +8,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Listagem de Itens</title>
-        <link rel="stylesheet" href="tabela.css"/>
+        <link rel="stylesheet" href="CSS/tabela.css"/>
     </head>
     <body>     
         <h1>Lista de Itens:</h1>
