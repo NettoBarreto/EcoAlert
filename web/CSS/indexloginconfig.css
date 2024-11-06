@@ -264,9 +264,12 @@ body, html {
 
         #inputAcesso {
             margin-bottom: -10px;
-
         }
 
         #esqSenha {
+            margin-bottom: 2px;
+        }
+        
+        #SemConta {
             margin-bottom: 2px;
         }

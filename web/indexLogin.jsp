@@ -29,6 +29,12 @@
                 PreparedStatement st = null;
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 conecta = DriverManager.getConnection(url, user, password);
+                
+        %>
+            <h2><%=email%></h2>
+            <h2><%=senha%></h2>
+     
+        <%
                 //comando sql / listar dados da tabela
                 String sql = "SELECT * FROM usuarios where nome_usuario = ? ";
                 st = conecta.prepareStatement(sql);

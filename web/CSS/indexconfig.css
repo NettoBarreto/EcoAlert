@@ -100,6 +100,7 @@ h1 + h2 {
     font-weight: 700;
     background-color: #DABB3E;
     color: white;
+    transition: background-color 0.5s ease;
 }
 .register:hover {
     background-color: green;
@@ -110,10 +111,30 @@ h1 + h2 {
     font-weight: 700;
     background-color: #DABB3E;
     color: white;
+    transition: background-color 0.5s ease;
 }
 .login:hover {
     background-color: blue;
     color: white;
+}
+
+#SemCad {
+    color: rgb(2, 69, 2);
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    padding-top: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: -5px;    
+}
+
+#SemCad:hover {
+    background-color:rgb(255, 255, 255, 0.5);
+    color:rgb(2, 69, 2,);
 }
 
 /* Media Queries */
